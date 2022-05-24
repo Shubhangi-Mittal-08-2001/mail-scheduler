@@ -1,0 +1,61 @@
+<div style="background-color: rgba(0, 0, 0, 0.774);width: 100%;height: 100%;">
+    <mat-toolbar color="accent" style="height: 50px;">
+        <span style="margin-right: 900px;">Mail Scheduler</span>
+        <a *ngIf="displayAccountName" style="margin-right:10px;" (click)="openDialogWithData()"><mat-icon style="margin-right:3px;">settings</mat-icon>{{displayAccountName}}</a>
+        <a (click)="reload()"><mat-icon  style="margin-right:3px;" >logout</mat-icon>Logout</a>
+    </mat-toolbar>
+  
+    
+    <mat-list role="list" style="float: left;width: 230px;">
+        <mat-list-item role="listitem" style="color: whitesmoke;" (click)="openDialog()">+ Add Contact</mat-list-item>
+        <mat-divider ></mat-divider>
+        <mat-list-item role="listitem" style="color: whitesmoke;"><mat-icon>perm_identity</mat-icon>Contact</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item style="color: whitesmoke;"  role="listitem" *ngFor="let account of filteredAccountDetails2" (click)="displayAccountType(account.accountName,account.email,account.id,account)">{{account.accountName}}<br>{{account.email}}</mat-list-item>
+    </mat-list>
+    <mat-list role="list" style="float: left;margin-top: 5px;">
+        <mat-list-item role="listitem" style="color: whitesmoke;"><mat-tab-group  color="accent">
+    <mat-tab label="Scheduled Emails" > </mat-tab>
+    <mat-tab label="Sent Emails"> </mat-tab>
+    </mat-tab-group></mat-list-item>
+    <mat-list-item  style="color:whitesmoke;width:350px;height: 100px;" role="listitem" *ngFor="let email of filteredEmailData2"  (click)="initialiseEmailWithContent(email.id)"><div>{{email.to}}<br>{{email.subject}}<br><span style="margin-right: 150px;">{{email.date}}</span>{{email.time}}<mat-icon >events</mat-icon></div></mat-list-item>
+    </mat-list>
+    <mat-card style="margin-left: 600px;height:530px;margin-top: 20px;background-color: rgba(128, 128, 128, 0.151)">
+        <mat-card-title style="float: left;margin-right: 500px;">Schedule Email</mat-card-title>
+        <mat-card-subtitle>New Email</mat-card-subtitle>
+        <form [formGroup]="newEmailForm" >
+            <mat-form-field appearance="fill">
+                <mat-label>To</mat-label>
+                <input matInput type=text formControlName="to">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>CC</mat-label>
+                <input matInput type=text formControlName="cc">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Bcc</mat-label>
+                <input matInput type=text formControlName="bcc">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Subject</mat-label>
+                <input matInput type=text formControlName="subject">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Body</mat-label>
+                <textarea matInput type=text formControlName="body"></textarea>
+            </mat-form-field>
+            <mat-form-field appearance="fill" style="width:250px">
+                <mat-label>Choose a date</mat-label>
+                <input matInput type=date formControlName="date">
+            </mat-form-field>
+            <mat-form-field appearance="fill" style="width:250px">
+                <mat-label>Schedule time</mat-label>
+                <input matInput type=time formControlName="time">
+            </mat-form-field><br>
+            <button mat-raised-button style="margin-right: 20px;" (click)="submitEmail()">Schedule Email</button>
+            <button mat-raised-button style="margin-right: 20px;" (click)="saveChanges()">Save Changes</button>
+            <button mat-raised-button (click)="clearEmail()">Discard Changes</button>
+        </form>
+    </mat-card>
+</div>
+

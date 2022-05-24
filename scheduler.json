@@ -1,0 +1,210 @@
+{
+  "mail-configurations": [
+    {
+      "id": 1,
+      "accountName": "Office Account",
+      "email": "john@gmail.com",
+      "password": "123123",
+      "incomingServer": "imap",
+      "incomingServerPort": 991,
+      "outgoingServer": "smtp",
+      "outgoingServerPort": 465
+    },
+    {
+      "id": 2,
+      "accountName": "Personal Account",
+      "email": "john@yahoo.com",
+      "password": "98769876",
+      "incomingServer": "imap",
+      "incomingServerPort": 991,
+      "outgoingServer": "smtp",
+      "outgoingServerPort": 460
+    },
+    {
+      "id": 3,
+      "accountName": "Office Account",
+      "email": "john@gmail.com",
+      "password": "1234",
+      "incomingServer": "imap",
+      "incomingServerPort": 991,
+      "outgoingServer": "smtp",
+      "outgoingServerPort": 465
+    },
+    {
+      "accountName": "Personal",
+      "email": "shubhimittal555@gmail.com",
+      "password": "123",
+      "incomingServer": "imap",
+      "incomingServerPort": "991",
+      "outgoingServer": "stmp",
+      "outgoingServerPort": "465",
+      "id": 4
+    },
+    {
+      "accountName": "Office",
+      "email": "shivi@gmail.com",
+      "password": "789",
+      "incomingServer": "imap",
+      "incomingServerPort": "991",
+      "outgoingServer": "stmp",
+      "outgoingServerPort": "465",
+      "id": 5
+    },
+    {
+      "accountName": "Persona Account",
+      "email": "s@gmail.com",
+      "password": "789",
+      "incomingServer": "imap",
+      "incomingServerPort": "991",
+      "outgoingServer": "stmp",
+      "outgoingServerPort": "330",
+      "id": 6
+    },
+    {
+      "accountName": "Persona Account",
+      "email": "s@gmail.com",
+      "password": "789",
+      "incomingServer": "imap",
+      "incomingServerPort": "991",
+      "outgoingServer": "stmp",
+      "outgoingServerPort": "330",
+      "id": 7
+    },
+    {
+      "accountName": "ofiice",
+      "email": "s@gmail.com",
+      "password": "123",
+      "incomingServer": "xyz",
+      "incomingServerPort": "123",
+      "outgoingServer": "wtu",
+      "outgoingServerPort": "332",
+      "id": 8
+    },
+    {
+      "accountName": "Office",
+      "email": "yogita@gmail.com",
+      "password": "123",
+      "incomingServer": "imap",
+      "incomingServerPort": "455",
+      "outgoingServer": "stmp",
+      "outgoingServerPort": "465",
+      "id": 9
+    },
+    {
+      "accountName": "Personal",
+      "email": "yogita@yahoo.com",
+      "password": "123",
+      "incomingServer": "imap",
+      "incomingServerPort": "991",
+      "outgoingServer": "rerf",
+      "outgoingServerPort": "465",
+      "id": 10
+    },
+    {
+      "accountName": "Home",
+      "email": "yogita@gmail.com",
+      "password": "123",
+      "incomingServer": "imap",
+      "incomingServerPort": "455",
+      "outgoingServer": "rerf",
+      "outgoingServerPort": "788",
+      "id": 11
+    }
+  ],
+  "emails": [
+    {
+      "to": "mary@gmail.com",
+      "cc": "roger.jones@yahoo.com",
+      "bcc": "",
+      "subject": "Project Discussion - Video Conferencing",
+      "body": "Understanding Customer Requirements\nCreate Day-wise schedule",
+      "scheduledDate": "2021-07-11T18:30:00.000Z",
+      "scheduledTime": "00:00",
+      "scheduledDateTime": 1626028200000,
+      "mailConfigurationId": 1,
+      "id": 1
+    },
+    {
+      "to": "smith@gmail.com",
+      "cc": "mary.jones@gmail.com",
+      "bcc": "",
+      "subject": "Project Discussion",
+      "body": "Discussion on finalizing Mini Project",
+      "scheduledDate": "2021-07-12T18:30:00.000Z",
+      "scheduledTime": "00:00",
+      "scheduledDateTime": 1626114600000,
+      "mailConfigurationId": 3,
+      "id": 2
+    },
+    {
+      "to": "s@gmail.com",
+      "bcc": "",
+      "cc": "yogita@yahoo.com",
+      "subject": "shopping groceries",
+      "date": "2022-03-14",
+      "time": "19:10",
+      "body": "i am edting the body",
+      "id": 7
+    },
+    {
+      "to": "shivi@gmail.com",
+      "bcc": "",
+      "cc": "yogita@gmail.com",
+      "subject": "reminder",
+      "date": "2022-03-17",
+      "time": "23:00",
+      "body": "",
+      "id": 13
+    },
+    {
+      "to": "p@gmail.com",
+      "bcc": "",
+      "cc": "yogita@gmail.com",
+      "subject": "i edited the subject",
+      "date": "2022-03-25",
+      "time": "23:04",
+      "body": "",
+      "id": 15
+    },
+    {
+      "to": "p@gmail.com",
+      "bcc": "",
+      "cc": "yogita@gmail.com",
+      "subject": "changed the subject just now",
+      "date": "2022-03-19",
+      "time": "19:50",
+      "body": "",
+      "id": 16
+    },
+    {
+      "to": "p@gmail.com",
+      "bcc": "",
+      "cc": "yogita@gmail.com",
+      "subject": "abcdefghijklmnowp",
+      "date": "2022-03-19",
+      "time": "19:50",
+      "body": "changed the body",
+      "id": 17
+    },
+    {
+      "to": "s@gmail.com",
+      "bcc": "",
+      "cc": "yogita@yahoo.com",
+      "subject": "movie plan cancelled",
+      "date": "2022-03-16",
+      "time": "00:15",
+      "body": "scheduled",
+      "id": 19
+    },
+    {
+      "to": "s@gmail.com",
+      "bcc": "",
+      "cc": "yogita@gmail.com",
+      "subject": "my new email rescheduled",
+      "date": "2022-03-31",
+      "time": "03:30",
+      "body": "",
+      "id": 20
+    }
+  ]
+}

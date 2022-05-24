@@ -1,0 +1,20 @@
+<div style="margin-left:350px;margin-top: 100px;">
+    <h1>Register</h1>
+    <form [formGroup]="registrationForm" (ngSubmit)="registerUser()">
+        <mat-form-field >
+            <mat-label>Email Address</mat-label>
+            <input matInput type="email" formControlName="email">
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="pswd">
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-label>Confirm Password</mat-label>
+            <input matInput type="password" formControlName="confirmpswd" >
+        </mat-form-field><br>
+        
+        <button mat-stroked-button color="accent" style="margin-right: 10px;" [disabled]="!registrationForm.valid">REGISTER</button>
+        <a routerLink="/accounts"><button mat-stroked-button color="accent">LOGIN</button></a>
+    </form>
+</div>

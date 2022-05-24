@@ -1,0 +1,15 @@
+<div style="margin-left:350px;margin-top: 100px;">
+    <h1>Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+        <mat-form-field >
+            <mat-label>Email Address</mat-label>
+            <input matInput type="email" formControlName="email">
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="pswd" >
+        </mat-form-field><br>
+        <a routerLink="register"><button mat-stroked-button color="accent" style="margin-right: 10px;">REGISTER</button></a>
+        <button mat-stroked-button color="accent" type="submit">LOGIN</button>
+    </form>
+</div>

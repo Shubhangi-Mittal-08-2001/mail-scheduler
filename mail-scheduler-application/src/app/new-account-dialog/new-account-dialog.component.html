@@ -1,0 +1,40 @@
+<div>
+  <form [formGroup]="NewAccountForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Account Name</mat-label>
+      <input matInput type="text" formControlName="accountName">
+    </mat-form-field>
+    <h4>Credentials</h4>
+    <mat-form-field style="display: block;">
+      <mat-label>Email</mat-label>
+      <input matInput type="text"  formControlName="email">
+    </mat-form-field>
+    <mat-form-field style="display: block;">
+      <mat-label>Password</mat-label>
+      <input matInput type="text"  formControlName="password">
+    </mat-form-field>
+    <h4>Incoming Server Details</h4>
+    <mat-form-field style="margin-right: 10px;">
+      <mat-label>Incoming Server</mat-label>
+      <input matInput type="text"  formControlName="incomingServer">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Incoming Server Port</mat-label>
+      <input matInput type="text"  formControlName="incomingServerPort">
+    </mat-form-field>
+    <h4>Outgoing Server Details</h4>
+    <mat-form-field style="margin-right: 10px;">
+      <mat-label>Outgoing Server</mat-label>
+      <input matInput type="text" formControlName="outgoingServer">
+    </mat-form-field>
+    <mat-form-field >
+      <mat-label>Outgoing Server Port</mat-label>
+      <input matInput type="text"  formControlName="outgoingServerPort">
+    </mat-form-field>
+    <button mat-button (click)="submit()" mat-dialog-close>Save</button>
+    <button mat-button mat-dialog-close>Delete</button>
+  </form>
+</div>
+  
+
+
